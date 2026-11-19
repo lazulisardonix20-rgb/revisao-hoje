@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Revisão de Hoje - Loja de Perfume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Perfumaria</h1>
+  </header>
+  <main>
+    <section class="cartao">
+      <h2>Perfumes</h2>
+      <div class="area-imagem">
+        <!-- PASSO 1: Preencha o alt descrevendo a imagem para o NVDA -->
+        <img 
+          src="imagem-perfumaria-principal.jpg" 
+          alt="Frasco de perfume com flores rosas e brancas ao redor e outros frascos ao fundo." 
+          class="foto-destaque"
+        >
+      </div>
+      <p>Perfumaria com foco em fragrâncias de cheiros naturais.</p>
+      <h3>Destaques</h3>
+      <ul>
+        <li>Perfume de flor Orquídea</li>
+        <li>Perfume de Cravo</li>
+      </ul>
+      <form>
+        <h3>Formulário de Pedido</h3>
+        <p>
+          <label for="nome-usuario">Seu Nome:</label>
+          <!-- PASSO 2 (Parte A): Adicione o atributo required neste input -->
+          <input type="text" id="nome-usuario" minlength="3" aria-describedby="dica-nome" required>
+          <small id="dica-nome">Digite pelo menos 3 letras.</small>
+        </p>
+        <p>
+          <!-- PASSO 3: Ligue este label ao input usando for="email-usuario" e id="email-usuario" -->
+          <label for = "email-usuario" >Seu E-mail:</label>
+          <input type="email" id="email-usuario" minlength="3" aria-describedby="dica-email">
+        </p>
+        <fieldset>
+          <legend>Escolha UMA opção (Radio):</legend>
+          <input type="radio" id="op1" name="escolha" value="opcao1">
+          <label for="op1">Receber em casa</label><br>
+          <input type="radio" id="op2" name="escolha" value="opcao2">
+          <label for="op2">Retirar no ponto de entrega</label>
+        </fieldset>
+        <fieldset>
+          <legend>Marque quantas opções quiser (Checkbox):</legend>
+          <input type="checkbox" id="check1" name="extras" value="item1">
+          <label for="check1">Embalado para presente</label><br>
+          <input type="checkbox" id="check2" name="extras" value="item2">
+          <label for="check2">Cada produto numa embalagem diferente</label>
+        </fieldset>
+        <!-- PASSO 2 (Parte B):  identifique o que falta neste botão -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Exercício de Revisão - Feito em aula</p>
+  </footer>
+</body>
+</html>

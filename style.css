@@ -1,0 +1,89 @@
+/* 1. Estilo da página inteira */
+body {
+  background-color: #f5eaf2;      /* MUDE A COR DE FUNDO */
+  color: #382638;                 /* MUDE A COR DO TEXTO */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 2. Estilo dos títulos */
+h1, h2, h3 {
+  color:#713b62;                 /* MUDE A COR DOS TÍTULOS */
+}
+
+/* 3. Caixa do cartão */
+.cartao {
+  background-color: #ffffff;
+  border: 2px solid #d8b5cf;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* 4. Imagem central */
+.area-imagem {
+  text-align: center;
+}
+
+.foto-destaque {
+ width: 350px;
+  max-width: 100%;
+  border: 3px solid #713b62;
+  border-radius: 15px;
+}
+
+/* 5. Foco do teclado (NÃO APAGAR) */
+input:focus, button:focus {
+  outline: 4px solid #713b62;
+  outline-offset: 3px;
+}
+
+/* =================================================
+   SUA VEZ! CRIE SUAS REGRAS ABAIXO:
+   - Estilize o fieldset (ex: border)
+   - Estilize o button (ex: background-color, color, padding)
+   - Estilize o footer ou o input
+   ================================================= */
+
+   
+/* 6. Estilo dos Campos de Formulário (input) e Caixas de Grupo (fieldset) */
+fieldset {
+  border: 2px solid #b77ca5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}          /* Espaço externo abaixo do grupo */
+
+   /* 7. Estilo dos Botões (button) */
+button {
+  background-color: #713b62;
+  color: #ffffff;               /* Texto preto no botão (máximo contraste) */
+  font-size: 18px;                /* Tamanho de letra legível */
+  font-weight: bold;              /* Texto em negrito */
+  padding: 13px 21px;             /* Tamanho confortável para clicar */
+  border: none;                   /* Remove borda padrão feia */
+  cursor: pointer;                /* Mostra a mãozinha ao passar o mouse */
+}
+
+
+button:hover {
+  background-color: #512b48;
+}
+
+/* 8. Estilo dos campos de preenchimento */
+input {
+  padding: 8px;
+  border: 1px solid #b77ca5;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 9. Estilo do rodapé */
+footer {
+  text-align: center;
+  color: #713b62;
+  font-size: 14px;
+  padding: 15px;
+}
